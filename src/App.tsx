@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import './App.css'
 import { getUsers } from './api/users'
@@ -22,6 +23,11 @@ function App() {
 
   return (
     <>
+      <Routes>
+        {/* <Route path="/" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="*" element={<NotFound />} /> */}
+      </Routes>
       <ul>
         {users.map(user => (
           <li key={user.id}>
